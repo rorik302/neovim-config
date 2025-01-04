@@ -6,6 +6,7 @@ vim.opt.cmdheight = 0
 vim.opt.confirm = true
 vim.opt.cursorline = true
 vim.opt.expandtab = true
+vim.opt.foldcolumn = "1"
 vim.opt.inccommand = "split"
 vim.opt.ignorecase = true
 vim.opt.list = true
