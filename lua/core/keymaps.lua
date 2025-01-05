@@ -33,3 +33,5 @@ map({ "n", "v" }, "d", [["_d]], { desc = "Clipboard: Don't copy to clipboard rem
 map({ "n", "v" }, "dd", [["_dd]], { desc = "Clipboard: Don't copy to clipboard removed line" })
 map("i", "<C-l>", "<Right>", { desc = "Cursor: Move cursor right" })
 map("i", "<C-h>", "<Left>", { desc = "Cursor: Move cursor left" })
+map("i", "<C-j>", "<Down>", { desc = "Cursor: Move cursor down" })
+map("i", "<C-k>", "<Up>", { desc = "Cursor: Move cursor up" })
