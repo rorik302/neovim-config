@@ -8,5 +8,7 @@ return {
 		})
 
 		vim.cmd("colorscheme ayu-mirage")
+		vim.cmd("hi LineNrAbove guifg=#707a8c")
+		vim.cmd("hi LineNrBelow guifg=#707a8c")
 	end,
 }
