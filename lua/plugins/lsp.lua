@@ -79,7 +79,9 @@ return {
 						},
 					},
 				},
-				pyright = {},
+				mypy = {},
+				ruff = {},
+				yamlls = {},
 			}
 
 			require("mason").setup()
@@ -95,6 +97,13 @@ return {
 					function(server_name)
 						local server = servers[server_name] or {}
 						server.capabilities = vim.tbl_deep_extend("force", {}, capabilities, server.capabilities or {})
+						local ok, ufo = pcall(require, "ufo")
+						if ok then
+							server.capabilities.textDocument.foldingRange = {
+								dynamicregistration = false,
+								linefoldingonly = true,
+							}
+						end
 						require("lspconfig")[server_name].setup(server)
 					end,
 				},

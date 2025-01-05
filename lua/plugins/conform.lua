@@ -8,8 +8,9 @@ return {
 			formatters_by_ft = {
 				javascript = { "prettier" },
 				lua = { "stylua" },
-				python = { "ruff" },
+				python = { "ruff_format" },
 				typescript = { "prettier" },
+				yaml = { "prettier" },
 			},
 			format_on_save = {
 				timeout_ms = 500,
