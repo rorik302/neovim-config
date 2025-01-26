@@ -1,7 +1,5 @@
 vim.opt.breakindent = true
-vim.schedule(function()
-	vim.opt.clipboard = "unnamedplus"
-end)
+vim.opt.clipboard = "unnamedplus"
 vim.opt.cmdheight = 0
 vim.opt.confirm = true
 vim.opt.cursorline = true
@@ -18,10 +16,10 @@ vim.opt.listchars = { tab = "» ", trail = "·", nbsp = "␣" }
 vim.opt.mouse = "a"
 vim.opt.number = true
 vim.opt.relativenumber = true
-vim.opt.scrolloff = 10
+vim.opt.scrolloff = 8
 vim.opt.shiftwidth = 2
 vim.opt.showmode = false
-vim.opt.sidescrolloff = 10
+vim.opt.sidescrolloff = 8
 vim.opt.signcolumn = "yes"
 vim.opt.smartcase = true
 vim.opt.softtabstop = 2
